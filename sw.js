@@ -1,4 +1,4 @@
-const CACHE = "launcher-v2";
+const CACHE = "launcher-v3";
 const ASSETS = ["./", "./index.html", "./icon.png", "./icon-512.png", "./manifest.webmanifest"];
 self.addEventListener("install", (e) => {
   e.waitUntil(caches.open(CACHE).then((c) => c.addAll(ASSETS)).then(() => self.skipWaiting()));
